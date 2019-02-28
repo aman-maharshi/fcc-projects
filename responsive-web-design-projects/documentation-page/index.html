@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Documentation Page</title>
+</head>
+<body>
+    <div class="wrapper">
+    <nav id="navbar">
+      <header><h1>Computer Science</h1></header>
+      <ul>
+        <li><a href="#Data_Structures" class="nav-link">Data Structures</a></li>
+        <li><a href="#Algorithms" class="nav-link">Algorithms</a></li>
+        <li><a href="#Theory_of_Computation" class="nav-link">Theory of Computation</a></li>
+        <li><a href="#Operating_Systems" class="nav-link">Operating Systems</a></li>
+        <li><a href="#Computer_Networks" class="nav-link">Computer Networks</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Data_Structures">
+        <header><h2>Data Structures</h2> </header>
+        <p>In computer science, a data structure is a data organization, management and storage format that enables efficient access and modification.More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.</p>
+        <p>Some popular data structures:</p>
+        <ul>
+          <li>Arrays, Stacks and Queues</li>
+          <li>Linked List</li>
+          <li>Trees and Graphs</li>
+          <li>Hash Table</li>
+        </ul>
+        <div><code>
+    // A linked list node <br> 
+    struct Node  <br>
+    { <br>
+      int data; <br> 
+      struct Node *next; <br>
+    };<br> </code></div>
+        <p>Above is the code for defining a linked list node in the C programming Language.</p>
+        <div>
+          <code>
+            // A tree node <br>
+            struct node  <br>
+    { <br>
+      int data; <br> 
+      struct node *left; <br> 
+      struct node *right; <br>
+    }; <br>
+          </code>
+        </div>
+        <p>Above is an example of tree node with integer data in C Programming Language</p>
+      </section>
+      
+      <section class="main-section" id="Algorithms">
+        <header><h2>Algorithms</h2> </header>
+        <p>In computer science, an algorithm is an unambiguous specification of how to solve a class of problems. Algorithms can perform calculation, data processing, and automated reasoning tasks.</p>
+        <p>As an effective method, an algorithm can be expressed within a finite amount of space and time and in a well-defined formal language for calculating a function.</p>
+        <p>Algorithms are analysed on the basis of two properties: </p>
+        <ul>
+          <li>Time - Execution time of the Algorithm</li>
+          <li>Space - Amount of additional space or memory need in execution</li>
+        </ul>
+        <p>Some common problems: </p>
+        <ul>
+          <li>Sorting Techniques</li>
+          <li>Optimization Problems - Greedy Method or Dynamic Programming</li>
+          <li>Graph Based Algorithms - BFS, DFS, Topological Sort</li>
+        </ul>
+        
+        <p>Some popular Algorithms: </p>
+        <ul>
+          <li>Merge Sort Algorithm (Divide and Conquer technique)</li>
+          <li>Subset Sum Problem (Dynamic Programming)</li>
+          <li>Matrix chain Multiplication Problem (Dynamic Programming)</li>
+          <li>Dijkstra’s Single Source Shortest Path Algorithm (Greedy Method)</li>
+          <li>Bellman Ford Algorithm for Single Source Shortest Path</li>
+          <li>Floyd-Warshall for All Pair Shortest Path</li>
+        </ul>
+      </section>
+      
+      <section class="main-section" id="Theory_of_Computation">
+        <header><h2>Theory of Computation</h2> </header>
+        <p>Theory of computation is the branch that deals with how efficiently problems can be solved on a model of computation, using an algorithm. The field is divided into three major branches: automata theory and languages, computability theory, and computational complexity theory, which are linked by the question: "What are the fundamental capabilities and limitations of computers?".</p>
+        <p>In order to perform a rigorous study of computation, computer scientists work with a mathematical abstraction of computers called a model of computation. There are several models in use, but the most commonly examined is the Turing machine.</p>
+        <p>Some topics covered in Theory of Computation</p>
+        <ul>
+          <li>Regular Languages - Finite Automata</li>
+          <li>Context Free Languages - Push Down Automata</li>
+          <li>Context Sensitive Languages - Halting Turing Machines that only use the part of tape on which input is present</li>
+          <li>Recursive Languages - Halting Turing Machings</li>
+          <li>Recursively Enumerable Languages - Turing Machines</li>
+        </ul>
+        <div>
+          <code>
+            // Production rules for a grammar <br>
+            S −→ A <br>
+            A −→ BC <br>
+            A −→ a <br>
+          </code>
+        </div>
+        <p>For the above example "S,A,B,C" are non-terminals where as  "a" is a terminal</p>
+      </section> 
+      
+      <section class="main-section" id="Operating_Systems">
+        <header><h2>Operating Systems</h2> </header>
+        <p>An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer programs.</p>
+        <p>Time-sharing operating systems schedule tasks for efficient use of the system and may also include accounting software for cost allocation of processor time, mass storage, printing, and other resources.</p>
+        <p>For hardware functions such as input and output and memory allocation, the operating system acts as an intermediary between programs and the computer hardware, although the application code is usually executed directly by the hardware and frequently makes system calls to an OS function or is interrupted by it. Operating systems are found on many devices that contain a computer – from cellular phones and video game consoles to web servers and supercomputers.</p>
+         <p>Some of the sub-topics in OS: </p>
+        <ul>
+          <li>Process Management</li>
+          <li>Process Scheduling Algorithms - FCFS, SJF, Round Robin</li>
+          <li>Process Synchronization - Mutexes and Semaphores</li>
+          <li>Deadlocks</li>
+          <li>Memory Management - Paging, Fragmentation, Virtual Memeory</li>
+          <li>File System, I/O and Protection</li>
+        </ul>
+        <div>
+          <code>
+             wait (m[i]); wait(m[(i+1) mode 4]); <br>
+    
+      "critical section" <br>
+    
+      release (m[i]); release (m[(i+1)mod 4]); <br>
+          </code>
+        </div>
+        <p>An example for enabling process synchronization using "wait" and "release" lock mechanism.</p>
+      </section>
+      
+      <section class="main-section" id="Computer_Networks">
+        <header><h2>Computer Networks</h2></header>
+        <p>A computer network is a digital telecommunications network which allows nodes to share resources. In computer networks, computing devices exchange data with each other using connections (data links) between nodes. These data links are established over cable media such as wires or optic cables, or wireless media such as Wi-Fi.</p>
+        <p>Network computer devices that originate, route and terminate the data are called network nodes. Nodes are generally identified by network addresses, and can include hosts such as personal computers, phones, and servers, as well as networking hardware such as routers and switches. Two such devices can be said to be networked together when one device is able to exchange information with the other device, whether or not they have a direct connection to each other. In most cases, application-specific communications protocols are layered (i.e. carried as payload) over other more general communications protocols. This formidable collection of information technology requires skilled network management to keep it all running reliably.</p>
+        <p>Computer networks support an enormous number of applications and services such as access to the World Wide Web, digital video, digital audio, shared use of application and storage servers, printers, and fax machines, and use of email and instant messaging applications as well as many others. Computer networks differ in the transmission medium used to carry their signals, communications protocols to organize network traffic, the network's size, topology, traffic control mechanism and organizational intent. The best-known computer network is the Internet.</p>
+        <p>Some of the sub-topics in Computer Networks are:</p>
+        <ul>
+          <li>IP Addressing and Subnetting</li>
+          <li>OSI Stack</li>
+          <li>Flow, Error and Access Control</li>
+          <li>Data Link Layer</li>
+          <li>Network Layer Protocols</li>
+          <li>Transport Layer</li>
+          <li>Routing</li>
+          <li>Congestion Control</li>
+          <li>Application Layer</li>
+          <li>Network Security</li>
+        </ul>
+        <div>
+          <code>
+            Class A IP Addresses - 1.0.0.1 to 126.255.255.254 <br>
+            Class B IP Addresses - 128.1.0.1 to 191.255.255.254 <br> Class C IP Addresses - 192.0.1.1 to 223.255.254.254 <br>
+            Class D IP Addresses - 224.0.0.0 to 239.255.255.255 <br> Class E IP Addresses - 240.0.0.0 to 254.255.255.254
+          </code>
+        </div>
+      </section>
+    </main>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
