@@ -1,0 +1,129 @@
+body {
+    background: rosybrown;
+    font-family: sans-serif;
+    text-align: center;
+    
+  }
+  main {
+    margin-top: -1em;
+    min-height: 85vh;
+    max-width: 1000px;
+    background: white;
+    margin: auto;
+    padding-top: 0.05em;
+  }
+  
+  #description {
+    font-weight: 600;
+  }
+  .row {
+    padding: 0.5em;
+  }
+  .left {
+    font-weight: 600;  
+  }
+  .right {
+    padding: 0.5em;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+  }
+  .text {
+    border: 1px solid gray;
+    width: 50vw;
+    height: 5vh;
+    padding-left: 1em;
+    font-size: 0.8em;
+  }
+  
+  textarea {
+    width: 60vw;
+    border: 1px solid gray;
+    font-size: 0.8em;
+  }
+  
+  select {
+    width: 25vw;
+    height: 5vh;
+    font-size: 1em;
+  }
+  
+  .submit {
+    padding: 0.5em;
+    padding-bottom: 1em;
+  }
+  button {
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: 500;
+    background: pink;
+    border-radius: 6px;
+  }
+  button a {
+    text-decoration: none;
+    color: black;
+  }
+  button:hover {
+    border: 2px solid pink;
+    background: white;
+  }
+  
+  
+  @media (min-width: 600px) {
+    main {
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+    body {
+      background: lightgreen;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .left, .right {
+      min-height: 10vh;
+    }
+    .left {
+      padding-top: 1em;
+      padding-left: 2em;
+      flex-basis: 30%;
+      
+    }
+    .right {
+      flex-basis: 70%;
+      margin-left: 2em;
+      display: flex;
+      padding-left: 1em;
+      
+    } 
+    .text, textarea {
+      width: 45vw;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    main {
+      margin: 0 auto;
+      max-width: 950px;
+    }
+    body {
+      background: Aquamarine;
+    }
+    .left {
+      padding-left: 1em;
+    }
+    .right {
+      margin-left: 3em;
+      flex-basis: 50vw;
+    }
+    .text, textarea {
+      width: 35vw;
+    }
+  }
+  
