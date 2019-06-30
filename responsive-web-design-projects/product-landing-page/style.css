@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*
+    NAV BAR
+--------------------*/
+button.navbar-toggler:active,
+button.navbar-toggler:focus {
+    outline: none;
+}
+
+nav.custom-nav {
+    background-color: #DBF9F4 !important;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+nav.custom-nav li a {
+    border-bottom: 2px solid transparent;
+}
+nav.custom-nav li a:hover {
+    color: #1C6E8C;
+}
+
+@media (min-width: 992px) {
+    nav.custom-nav {
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+
+    nav.custom-nav ul li {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    nav.custom-nav li a:hover {
+        border-bottom: 2px solid #1C6E8C;
+    }
+
+}
+@media (max-width: 420px) {
+    nav.custom-nav .navbar-brand {
+        font-size: 1.2em;
+    }
+}
+
+/*
+    SECTION: FORM
+---------------------------*/
+section.form {
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section.form p {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+section.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+section.form form input {
+    padding: .5em 1em;
+    line-height: 1.1;
+    width: 350px;
+}
+
+section.form form button {
+    border: none;
+    width: 160px;
+    align-self: center;
+    margin-top: 1em;
+    font-weight: 600;
+    padding: 5px 10px;
+    background-color: #1C6E8C;
+    color: white;
+    border: 2px solid #1C6E8C;
+    transition: 0.3s;
+}
+
+section.form form button:hover {
+    color: #1C6E8C;
+    background-color: #fff;
+}
+
+@media (min-width: 992px)  {
+    section.form p  {
+        font-size: 2em;
+    }
+}
+
+/*
+    SECTION: FEATURES
+------------------------*/
+section.features {
+    padding-top: 4em;
+}
+section.features .icon {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1.5em;
+}
+section.features .icon-details {
+    padding-left: 1em;
+    margin-bottom: 3em;
+}
+section.features i.fas {
+    font-size: 4em;
+    color: #79B791;
+}
+section.features p.head {
+    font-size: 1.5em;
+    color: #274156;
+}
+section.features p.desc {
+    margin-top: -1em;
+}
+@media (max-width: 576px) {
+    section.features .icon-details {
+        padding-left: 2em;
+    }
+}
+/*
+    SECTION:VIDEO
+----------------------------*/
+
+section.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+@media (max-width: 576px) {
+    section.video iframe {
+        width: 400px;
+    }
+}
+@media (max-width: 420px) {
+    section.video iframe {
+        width: 300px;
+    }
+}
+/*
+    SECTION: PRICING
+---------------------*/
+section.pricing .row {
+    border: 1px dashed lightgreen;
+    padding: 1em;
+}
+section.pricing .temp {
+    padding: 2em;
+    background-color: lightblue;
+}
