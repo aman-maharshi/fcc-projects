@@ -218,4 +218,9 @@ section#pricing .custom-card button:hover {
     color: #1C6E8C;
     background-color: #fff;
 }
+@media (max-width: 350px) {
+    #header-img {
+        width: 150px;
+    }
+}
 
